@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body class="login-page">
+    <center>
+        <div class="login-container">
+            <h2>Welcome to the Quiz!</h2>
+            <p>Please enter your name to begin.</p>
+            <form id="login-form">
+                <input type="text" id="username" placeholder="Enter your name" required />
+                <button type="submit">Login</button>
+            </form>
+            <p>Once logged in, you will be directed to the quiz.</p>
+        </div>
+    </center>
+
+    <script>
+        // Redirect to the quiz page after login
+        document.getElementById("login-form").addEventListener("submit", function(event) {
+            event.preventDefault();  // Prevent form submission
+            const username = document.getElementById("username").value;
+
+            if (username) {
+                localStorage.setItem("username", username);  
+                window.location.href = "index1.html";  
+            } else {
+                alert("Please enter your name.");
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+/* General styles for the quiz page */
+body.quiz-page {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Styling the quiz container */
+.quiz-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    border: 2px solid #3498db; /* Blue border */
+}
+
+/* Question container styles */
+.quiz-question {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Feedback styling */
+.quiz-feedback {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Space between the question and answers */
+.options {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Button styles for the options */
+.option {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for options */
+.option:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Button for next question */
+button#next-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for next question button */
+button#next-button:hover {
+    background-color: #2980b9;
+}
+
+/* Animation for question container */
+.quiz-question {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+/* Animation for options */
+.option {
+    opacity: 0;
+    animation: fadeInOptions 0.5s forwards;
+}
+
+/* Fade-in effect for the question */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Fade-in effect for options */
+@keyframes fadeInOptions {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Animation delay for options */
+.option:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.option:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.option:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.option:nth-child(4) {
+    animation-delay: 0.4s;
+}
+/* General styles for the page */
+body.login-page {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Styling the login container */
+.login-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #3498db; /* Blue border */
+    width: 300px;
+    text-align: center;
+}
+
+/* Title and instruction styling */
+h2 {
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Input field styling */
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Button styling */
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
