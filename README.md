@@ -43,3 +43,7 @@ I build a quiz application with a login feature that asks users to input their n
 The quiz gives feedback on answers and shows the score at the end.
 In future we add more functinalities in it like, i add multiple user to play this or solve this simultaneously with some specify time period .
 
+## OUTPUT ##
+![Image](https://github.com/user-attachments/assets/20af37c9-7fa1-45ec-b574-e895f1a4b9ab)
+![Image](https://github.com/user-attachments/assets/fce530ee-8e01-436a-9fae-d55d7db67379)
+![Image](https://github.com/user-attachments/assets/525bfd8a-3a64-440a-a646-bf3a7b6ee728)
